@@ -1,16 +1,18 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 import numpy as np
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the model and encoders
-model = joblib.load(os.path.join('Sleepify', 'best_model_decision_tree.pkl'))
-gender_encoder = joblib.load(os.path.join('Sleepify', 'Gender_label_encoder.pkl'))
-occupation_encoder = joblib.load(os.path.join('Sleepify', 'Occupation_label_encoder.pkl'))
-bmi_encoder = joblib.load(os.path.join('Sleepify', 'BMI Category_label_encoder.pkl'))
-scaler = joblib.load(os.path.join('Sleepify', 'minmax_scaler_split.pkl'))
+model = joblib.load(os.path.join('Sleepify/backend', 'best_model_decision_tree.pkl'))
+gender_encoder = joblib.load(os.path.join('Sleepify/backend', 'Gender_label_encoder.pkl'))
+occupation_encoder = joblib.load(os.path.join('Sleepify/backend', 'Occupation_label_encoder.pkl'))
+bmi_encoder = joblib.load(os.path.join('Sleepify/backend', 'BMI Category_label_encoder.pkl'))
+scaler = joblib.load(os.path.join('Sleepify/backend', 'minmax_scaler_split.pkl'))
 
 # Prediction endpoint
 @app.route('/predict', methods=['POST'])
