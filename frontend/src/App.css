@@ -24,13 +24,21 @@ label {
   margin-right: 10px;
 }
 
+span {
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+
 input[type="number"],
 select {
   padding: 10px;
   border: 1px solid #ced4da;
   border-radius: 5px;
   width: 100%;
-  max-width: 300px; /* Limit input width */
+  max-width: 300px;
 }
 
 input[type="number"]:focus,
@@ -40,7 +48,7 @@ select:focus {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #000000;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -51,7 +59,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #000000;
 }
 
 .prediction {

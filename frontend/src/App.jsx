@@ -49,7 +49,7 @@ function App() {
       
       <div>
         <label>Age</label>
-        <input type="number" value={age} onChange={e => setAge(Number(e.target.value))} />
+        <input type="number" min="15" max="100" value={age} onChange={e => setAge(Number(e.target.value))} />
       </div>
       <div>
         <label>Gender</label>
@@ -81,11 +81,13 @@ function App() {
       </div>
       <div>
         <label>Sleep Duration</label>
-        <input type="number" step="0.1" value={sleepDuration} onChange={e => setSleepDuration(Number(e.target.value))} />
+        <input type="range" min="1" max="24" step="0.1" value={sleepDuration} onChange={e => setSleepDuration(Number(e.target.value))} />
+        <span>{sleepDuration}</span>
       </div>
       <div>
         <label>Quality of Sleep</label>
-        <input type="number" value={qualityOfSleep} onChange={e => setQualityOfSleep(Number(e.target.value))} />
+        <input type="number" min="0" max="10" step="1" value={qualityOfSleep} onChange={e => setQualityOfSleep(Number(e.target.value))} />
+        <span>{qualityOfSleep}</span>
       </div>
       <div>
         <label>Physical Activity Level</label>
