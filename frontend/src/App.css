@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #183450;
+  background-color: #1b3e72;
   margin: 0;
-  padding: 20px;
 }
 
-h1 {
+.ctitle {
+  font-family: 'Yeseva One';
+}
+
+#title {
+  font-size: 10em;
   text-align: center;
   color: #ffffff;
+}
+
+#subtitle {
+  margin-top: -14%;
+  font-size: 2em;
+  text-align: center;
+  color: #ddc392;
 }
 
 h2 {

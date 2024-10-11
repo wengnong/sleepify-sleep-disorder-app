@@ -45,7 +45,12 @@ function App() {
 
   return (
     <div>
-      <h1>Sleep Disorder Detection</h1>
+      <div className="jumbotron">
+        <div className="ctitle">
+          <h1 id="title">Sleepify</h1>
+          <h2 id="subtitle">A Sleep Disorder Detector</h2>
+        </div>
+      </div>
       
       <div>
         <label>Age</label>
@@ -117,7 +122,7 @@ function App() {
       <button onClick={handlePredict}>Predict</button>
 
       {prediction !== null && (
-        <div>
+        <div class="predict-container">
           <h2>Prediction: {prediction === 0 ? 'No Disorder' : prediction === 1 ? 'Insomnia' : 'Sleep Apnea'}</h2>
         </div>
       )}
