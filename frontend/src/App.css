@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat;
   background-color: #1b3e72;
   margin: 0;
+  position: relative;
+}
+
+.bg-img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/flat-design-silver-stars-background.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  filter: blur(4px);
+  pointer-events: none;
 }
 
 .ctitle {
@@ -12,12 +28,12 @@ body {
 
 #title {
   font-size: 10em;
+  margin-bottom: 0;
   text-align: center;
   color: #ffffff;
 }
 
 #subtitle {
-  margin-top: -14%;
   font-size: 2em;
   text-align: center;
   color: #ddc392;
@@ -37,8 +53,60 @@ label {
   margin-right: 10px;
 }
 
+.three-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container{
+  max-width: 280px;
+  margin: 50px;
+  padding: 40px;
+  border: 5px solid #202020;
+  border-radius: 30px;
+  background-color: #202020;
+}
+
+.sleep-container{
+  max-width: 280px;
+  margin: 50px;
+  padding: 40px;
+  border: 5px solid #202020;
+  border-radius: 30px;
+  background-color: #202020;
+}
+
+.health-container{
+  max-width: 280px;
+  margin: 50px;
+  padding: 40px;
+  border: 5px solid #202020;
+  border-radius: 30px;
+  background-color: #202020;
+}
+
+.input-container span {
+  font-weight: 500;
+}
+
+.sleep-span{
+  font-weight: 500;
+}
+
+.health-container span {
+  font-weight : 500;
+}
+
 span {
   font-weight: bold;
+}
+
+.inputs {
+  font-family : Montserrat;
+}
+
+input {
+  box-sizing: border-box;
 }
 
 input[type="range"] {
@@ -51,13 +119,18 @@ select {
   border: 1px solid #ced4da;
   border-radius: 5px;
   width: 100%;
-  max-width: 300px;
 }
 
 input[type="number"]:focus,
 select:focus {
   border-color: #80bdff;
   outline: none;
+}
+
+.predict-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
