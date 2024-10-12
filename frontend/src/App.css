@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   background-color: #1b3e72;
   margin: 0;
   position: relative;
@@ -19,11 +19,13 @@ body {
   background-position: center;
   opacity: 0.1;
   filter: blur(4px);
+  z-index: 0;
   pointer-events: none;
 }
 
 .ctitle {
   font-family: 'Yeseva One';
+  margin-bottom: 3em;
 }
 
 #title {
@@ -44,6 +46,12 @@ h2 {
   color: #28a745;
 }
 
+h3 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
 div {
   margin: 10px 0;
 }
@@ -51,6 +59,10 @@ div {
 label {
   font-weight: bold;
   margin-right: 10px;
+}
+
+.title-ct {
+  font-family: 'Yeseva One';
 }
 
 .three-container {
