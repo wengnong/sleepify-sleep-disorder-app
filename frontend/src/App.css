@@ -5,6 +5,9 @@ body {
   background-color: #1b3e72;
   margin: 0;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-img {
@@ -43,7 +46,6 @@ body {
 
 h2 {
   text-align: center;
-  color: #28a745;
 }
 
 h3 {
@@ -139,20 +141,22 @@ select:focus {
   outline: none;
 }
 
-.predict-button{
+.predict-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#buttonid {
+  font-size: 24px;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
 button {
-  background-color: #000000;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
   transition: background-color 0.3s;
 }
 
@@ -160,10 +164,25 @@ button:hover {
   background-color: #000000;
 }
 
-.prediction {
-  margin-top: 20px;
-  font-size: 1.5em;
+.predict-container {
+  font-size: 30px;
   text-align: center;
+  color: #28a745;
+  margin: 0;
+}
+
+.h2-prediction {
+  background-color: #242424;
+  margin-inline: 20%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.bot-container {
+  margin-inline: 25%;
+  background-color: rgba(0, 0, 0, .3);
+  padding: 30px;
+  border-radius: 20px;
 }
 
 select {
