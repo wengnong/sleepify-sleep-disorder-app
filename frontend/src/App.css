@@ -18,8 +18,8 @@ body {
   right: 0;
   bottom: 0;
   background-image: url('assets/flat-design-silver-stars-background.png');
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
   opacity: 0.1;
   filter: blur(4px);
   z-index: 0;
