@@ -1,4 +1,4 @@
-# Sleepify: A Sleep Disorder Detector as Web-based Application
+# Sleepify: A Sleep Disorder Detector using Self-Input
 
 ## Overview
 
