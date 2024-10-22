@@ -4,3 +4,8 @@ scikit-learn
 joblib
 numpy
 pandas
+imblearn
+matplotlib
+nbformat
+plotly
+seaborn
