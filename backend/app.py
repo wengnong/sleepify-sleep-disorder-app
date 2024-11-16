@@ -14,6 +14,9 @@ occupation_encoder = joblib.load(os.path.join('Sleepify/backend', 'Occupation_la
 bmi_encoder = joblib.load(os.path.join('Sleepify/backend', 'BMI Category_label_encoder.pkl'))
 scaler = joblib.load(os.path.join('Sleepify/backend', 'minmax_scaler_split.pkl'))
 
+# testing
+# testing3
+# testing4
 # Prediction endpoint
 @app.route('/predict', methods=['POST'])
 def predict():
