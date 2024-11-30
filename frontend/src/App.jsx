@@ -1,4 +1,5 @@
 import './App.css';
+import { Header } from "./components/Header"
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -44,9 +45,11 @@ function App() {
   };
 
   return (
-    <div>
-    {/* <Header /> */}
-      <div className="main-container">
+    <>
+      <Header />
+      <Navbar />
+
+      {/* <div>
         <div className="jumbotron">
           <div className="ctitle">
             <h1 id="title">Sleepify</h1>
@@ -255,8 +258,8 @@ function App() {
           )}
         </div>
       </div>
-      <div className="bg-img"></div>
-    </div>
+      <div className="bg-img"></div> */}
+    </>
   );
 }
 
