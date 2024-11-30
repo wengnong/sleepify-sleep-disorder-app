@@ -8,11 +8,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the model and encoders
-model = joblib.load(os.path.join('Sleepify/backend', 'best_model_decision_tree.pkl'))
-gender_encoder = joblib.load(os.path.join('Sleepify/backend', 'Gender_label_encoder.pkl'))
-occupation_encoder = joblib.load(os.path.join('Sleepify/backend', 'Occupation_label_encoder.pkl'))
-bmi_encoder = joblib.load(os.path.join('Sleepify/backend', 'BMI Category_label_encoder.pkl'))
-scaler = joblib.load(os.path.join('Sleepify/backend', 'minmax_scaler_split.pkl'))
+model = joblib.load(os.path.join('backend', 'best_model_decision_tree.pkl'))
+gender_encoder = joblib.load(os.path.join('backend', 'Gender_label_encoder.pkl'))
+occupation_encoder = joblib.load(os.path.join('backend', 'Occupation_label_encoder.pkl'))
+bmi_encoder = joblib.load(os.path.join('backend', 'BMI Category_label_encoder.pkl'))
+scaler = joblib.load(os.path.join('backend', 'minmax_scaler_split.pkl'))
 
 # Prediction endpoint
 @app.route('/predict', methods=['POST'])
