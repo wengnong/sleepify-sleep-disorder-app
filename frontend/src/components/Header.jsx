@@ -1,7 +1,27 @@
+import { useState, useEffect } from 'react';
+
 export function Header() {
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+    const handleScroll = () => {
+        if (window.scrollY > 400) {
+        setIsScrolled(true);
+        } else {
+        setIsScrolled(false);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+    }, []);
+
     return (
-        <header className='sticky top-0 mx-auto w-full p-2 sm:p-4 flex items-center justify-between gap-2 sm:gap-4'>
+        <header className={`sticky top-0 mx-auto w-full p-2 sm:p-4 flex items-center justify-between gap-2 sm:gap-4 transition-all duration-700 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
             <span className='text-2xl sm:text-3xl md:text-3xl lg:text-3xl text-[#1b3e72] font-extrabold cursor-pointer'>Sleepify</span>
             <div className='flex items-center justify-between gap-2 sm:gap-4'>
                 <span onClick={() =>

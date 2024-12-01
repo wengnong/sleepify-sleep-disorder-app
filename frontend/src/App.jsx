@@ -81,7 +81,6 @@ function App() {
           setSystolic={setSystolic}
           setDiastolic={setDiastolic}
         />
-        {/* <PredictCard handlePredict={handlePredict}/> */}
         <Predictor prediction={prediction} handlePredict={handlePredict}/>
 
       </div>
