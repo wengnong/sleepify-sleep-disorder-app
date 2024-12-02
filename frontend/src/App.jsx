@@ -41,7 +41,7 @@ function App() {
 
     try {
       const response = await axios.post('http://localhost:5000/predict', data);
-      console.log("Response from backend:", response.data); // Log the response data
+      console.log("Response from backend:", response.data);
       setPrediction(response.data.prediction);
     } catch (error) {
         console.error('Error making prediction:', error);
@@ -55,32 +55,34 @@ function App() {
         <Header />
         <Jumbotron />
         <Details />
-        <InputCard
-          age={age}
-          gender={gender}
-          occupation={occupation}
-          bmiCategory={bmiCategory}
-          sleepDuration={sleepDuration}
-          qualityOfSleep={qualityOfSleep}
-          physicalActivityLevel={physicalActivityLevel}
-          stressLevel={stressLevel}
-          heartRate={heartRate}
-          dailySteps={dailySteps}
-          systolic={systolic}
-          diastolic={diastolic}
-          setAge={setAge}
-          setGender={setGender}
-          setOccupation={setOccupation}
-          setBmiCategory={setBmiCategory}
-          setSleepDuration={setSleepDuration}
-          setQualityOfSleep={setQualityOfSleep}
-          setPhysicalActivityLevel={setPhysicalActivityLevel}
-          setStressLevel={setStressLevel}
-          setHeartRate={setHeartRate}
-          setDailySteps={setDailySteps}
-          setSystolic={setSystolic}
-          setDiastolic={setDiastolic}
-        />
+        <div id='input-card'>
+          <InputCard
+            age={age}
+            gender={gender}
+            occupation={occupation}
+            bmiCategory={bmiCategory}
+            sleepDuration={sleepDuration}
+            qualityOfSleep={qualityOfSleep}
+            physicalActivityLevel={physicalActivityLevel}
+            stressLevel={stressLevel}
+            heartRate={heartRate}
+            dailySteps={dailySteps}
+            systolic={systolic}
+            diastolic={diastolic}
+            setAge={setAge}
+            setGender={setGender}
+            setOccupation={setOccupation}
+            setBmiCategory={setBmiCategory}
+            setSleepDuration={setSleepDuration}
+            setQualityOfSleep={setQualityOfSleep}
+            setPhysicalActivityLevel={setPhysicalActivityLevel}
+            setStressLevel={setStressLevel}
+            setHeartRate={setHeartRate}
+            setDailySteps={setDailySteps}
+            setSystolic={setSystolic}
+            setDiastolic={setDiastolic}
+          />
+        </div>
         <Predictor prediction={prediction} handlePredict={handlePredict}/>
         <div className='text-center text-xs m-10'>
           <p>©Copyright 2024 of Sleepify. All rights are protected by law.</p>

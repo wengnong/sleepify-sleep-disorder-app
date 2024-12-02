@@ -22,7 +22,6 @@ export function Predictor({prediction, handlePredict}) {
                     <h2 className='text-center text-2xl font-bold text-[#0f1b25]'>Here is your result:</h2>
                     <div className='bg-[#0f1b25] m-4 px-4 py-6 rounded-lg w-3/4 mx-auto'>
                         <h3 className='text-center p-4 text-3xl font-bold text-white'>NO DISORDER</h3>
-                        <hr className='border-2 border-[#bdc8d1]'/>
                         <div className='bg-slate-200 my-4 p-4 rounded-lg mx-auto text-center'>
                             <p className='w-3/4 mx-auto'>A person with <b>no disorder</b> (normal sleep) has no significant issues falling asleep, staying asleep, or waking up feeling refreshed.</p>
                             <h4 className='mt-6 text-xl font-semibold text-[#1c3447]'>Causes</h4>
@@ -49,7 +48,6 @@ export function Predictor({prediction, handlePredict}) {
                     <h2 className='text-center text-2xl font-bold text-[#0f1b25]'>Here is your result:</h2>
                     <div className='bg-[#0f1b25] m-4 px-4 py-6 rounded-lg w-3/4 mx-auto'>
                         <h3 className='text-center p-4 text-3xl font-bold text-white'>INSOMNIA</h3>
-                        <hr className='border-2 border-[#bdc8d1]'/>
                         <div className='bg-slate-200 my-4 p-4 rounded-lg mx-auto text-center'>
                             <p className='w-3/4 mx-auto'>A person with <b>insomnia</b> involves difficulty falling or staying asleep, or waking up too early and not being able to go back to sleep.</p>
                             <h4 className='mt-6 text-xl font-semibold text-[#1c3447]'>Causes</h4>
@@ -79,7 +77,6 @@ export function Predictor({prediction, handlePredict}) {
                     <h2 className='text-center text-2xl font-bold text-[#0f1b25]'>Here is your result:</h2>
                     <div className='bg-[#0f1b25] m-4 px-4 py-6 rounded-lg w-3/4 mx-auto'>
                         <h3 className='text-center p-4 text-3xl font-bold text-white'>SLEEP APNEA</h3>
-                        <hr className='border-2 border-[#bdc8d1]'/>
                         <div className='bg-slate-200 my-4 p-4 rounded-lg mx-auto text-center'>
                             <p className='w-3/4 mx-auto'>A person with <b>sleep apnea</b> has a serious sleep disorder where breathing repeatedly stops and starts, leading to fragmented sleep and poor oxygenation.</p>
                             <h4 className='mt-6 text-xl font-semibold text-[#1c3447]'>Causes</h4>
