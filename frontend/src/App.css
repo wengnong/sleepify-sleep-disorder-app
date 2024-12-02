@@ -69,9 +69,8 @@ label {
   display: flex;
   flex-direction: row;
 }
-*/
 
-/* .input-container{
+.input-container{
   max-width: 280px;
   margin: 50px;
   padding: 40px;
@@ -96,21 +95,20 @@ label {
   border: 5px solid #202020;
   border-radius: 30px;
   background-color: #202020;
-} */
+}
 
-/* .input-container span {
+.input-container span {
   font-weight: 500;
-} */
+}
 
-/* .sleep-span{
+.sleep-span{
   font-weight: 500;
-} */
+}
 
-/* .health-container span {
+.health-container span {
   font-weight : 500;
-} */
+}
 
-/*
 span {
   font-weight: bold;
 }
