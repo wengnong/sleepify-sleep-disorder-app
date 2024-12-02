@@ -1,7 +1,7 @@
 export function InputCard({age, gender, occupation, bmiCategory, sleepDuration, qualityOfSleep, physicalActivityLevel, stressLevel, heartRate, dailySteps, systolic, diastolic, setAge, setGender, setOccupation, setBmiCategory, setSleepDuration, setQualityOfSleep, setPhysicalActivityLevel, setStressLevel, setHeartRate, setDailySteps, setSystolic, setDiastolic}) {
 
     return(
-        <div className='flex flex-row mx-auto'>
+        <div className='flex flex-wrap mx-auto'>
             <div className='max-w-72 m-12 p-10 rounded-xl bg-[#0f1b25] text-white flex flex-col gap-4'>
                 <h3 className='font-bold text-center text-2xl'>INPUT</h3>
                 <hr />
