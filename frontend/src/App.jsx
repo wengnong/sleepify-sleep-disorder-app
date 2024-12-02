@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { Header } from './components/Header'
 import { Jumbotron } from './components/Jumbotron'
-// import { Details } from './components/Details'
+import { Details } from './components/Details'
 import { InputCard } from './components/InputCard'
 import { Predictor } from './components/Predictor'
 
@@ -54,7 +54,7 @@ function App() {
       <div className='relative text-sm sm:text-base min-h-screen flex flex-col'>
         <Header />
         <Jumbotron />
-        {/* <Details /> */}
+        <Details />
         <InputCard
           age={age}
           gender={gender}
@@ -82,7 +82,9 @@ function App() {
           setDiastolic={setDiastolic}
         />
         <Predictor prediction={prediction} handlePredict={handlePredict}/>
-
+        <div className='text-center text-xs m-10'>
+          <p>©Copyright 2024 of Sleepify. All rights are protected by law.</p>
+        </div>
       </div>
     </>
   );

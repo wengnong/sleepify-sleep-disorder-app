@@ -7,7 +7,6 @@ html {
 
 body {
   font-family: 'Montserrat';
-  /* background-color: #1b3e72; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,9 +20,12 @@ body {
 
 .background-img {
   background-image: url('assets/14518b21f2787dc71da6c81ed6ec1250.jpg');
-  object-fit: contain;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+}
+
+.benefit-img {
+  background-image: url('assets/aeff7baeda3b567c7f9f5089feda3fde.jpg');
+  background-size: contain;
 }
 
 /* 

@@ -19,7 +19,7 @@ export function Predictor({prediction, handlePredict}) {
 
             {prediction === 0 && (
                 <div ref={resRef}>
-                    <h2 className='text-center text-2xl font-bold'>Here is your result:</h2>
+                    <h2 className='text-center text-2xl font-bold text-[#0f1b25]'>Here is your result:</h2>
                     <div className='bg-[#0f1b25] m-4 px-4 py-6 rounded-lg w-3/4 mx-auto'>
                         <h3 className='text-center p-4 text-3xl font-bold text-white'>NO DISORDER</h3>
                         <hr className='border-2 border-[#bdc8d1]'/>
@@ -46,7 +46,7 @@ export function Predictor({prediction, handlePredict}) {
 
             {prediction === 1 && (
                 <div ref={resRef}>
-                    <h2 className='text-center text-2xl font-bold'>Here is your result:</h2>
+                    <h2 className='text-center text-2xl font-bold text-[#0f1b25]'>Here is your result:</h2>
                     <div className='bg-[#0f1b25] m-4 px-4 py-6 rounded-lg w-3/4 mx-auto'>
                         <h3 className='text-center p-4 text-3xl font-bold text-white'>INSOMNIA</h3>
                         <hr className='border-2 border-[#bdc8d1]'/>
@@ -76,7 +76,7 @@ export function Predictor({prediction, handlePredict}) {
 
             {prediction === 2 && (
                 <div ref={resRef}>
-                    <h2 className='text-center text-2xl font-bold'>Here is your result:</h2>
+                    <h2 className='text-center text-2xl font-bold text-[#0f1b25]'>Here is your result:</h2>
                     <div className='bg-[#0f1b25] m-4 px-4 py-6 rounded-lg w-3/4 mx-auto'>
                         <h3 className='text-center p-4 text-3xl font-bold text-white'>SLEEP APNEA</h3>
                         <hr className='border-2 border-[#bdc8d1]'/>
