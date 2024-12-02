@@ -1,36 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat';
-  background-color: #1b3e72;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.bg-img {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('assets/flat-design-silver-stars-background.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  opacity: 0.1;
-  filter: blur(4px);
-  z-index: 0;
-  pointer-events: none;
+.jumbotron {
+  background-image: url('assets/seamless-glittery-gold-stars-design-resource.jpg');
+  background-size: 140%;
 }
 
-.ctitle {
-  font-family: 'Yeseva One';
-  margin-bottom: 3em;
+.background-img {
+  background-image: url('assets/14518b21f2787dc71da6c81ed6ec1250.jpg');
+  background-size: contain;
 }
 
+.benefit-img {
+  background-image: url('assets/aeff7baeda3b567c7f9f5089feda3fde.jpg');
+  background-size: contain;
+}
+
+/* 
 #title {
   font-size: 10em;
   margin-bottom: 0;
@@ -71,8 +69,9 @@ label {
   display: flex;
   flex-direction: row;
 }
+*/
 
-.input-container{
+/* .input-container{
   max-width: 280px;
   margin: 50px;
   padding: 40px;
@@ -97,20 +96,21 @@ label {
   border: 5px solid #202020;
   border-radius: 30px;
   background-color: #202020;
-}
+} */
 
-.input-container span {
+/* .input-container span {
   font-weight: 500;
-}
+} */
 
-.sleep-span{
+/* .sleep-span{
   font-weight: 500;
-}
+} */
 
-.health-container span {
+/* .health-container span {
   font-weight : 500;
-}
+} */
 
+/*
 span {
   font-weight: bold;
 }
@@ -187,4 +187,4 @@ button:hover {
 
 select {
   cursor: pointer;
-}
+} */
