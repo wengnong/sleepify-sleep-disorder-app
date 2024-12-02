@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
 export function Header() {
 
@@ -6,30 +6,34 @@ export function Header() {
     const [isLink, setIsLink] = useState(false);
 
     useEffect(() => {
-    const handleScroll = () => {
-        if (window.scrollY > 20 && window.scrollY < 400) {
-            setIsLink(true);
-        } else {
-            setIsLink(false);
-        }
-        
-        if (window.scrollY > 400) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
-        }
-    };
+        const handleScroll = () => {
+            if (window.scrollY > 20 && window.scrollY < 400) {
+                setIsLink(true);
+            } else {
+                setIsLink(false);
+            }
+            
+            if (window.scrollY > 400) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
 
-    window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-    };
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <header className={`sticky z-30 top-0 mx-auto w-full p-2 sm:p-4 flex items-center justify-between gap-2 sm:gap-4 transition-all duration-700 ${isScrolled ? 'bg-white' : 'bg-transparent'} ${isLink ? 'text-white' : ''}`}>
-            <span className='text-2xl sm:text-3xl md:text-3xl lg:text-3xl text-[#1b3e72] font-extrabold cursor-pointer'>Sleepify</span>
+            <span onClick={scrollToTop} className='text-2xl sm:text-3xl md:text-3xl lg:text-3xl text-[#1b3e72] font-extrabold cursor-pointer'>Sleepify</span>
             <div className='flex items-center justify-between gap-2 sm:gap-4'>
                 <span onClick={() =>
                     window.open('https://www.cdc.gov/sleep/about/index.html', '_blank')

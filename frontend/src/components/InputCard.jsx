@@ -3,7 +3,7 @@ export function InputCard({age, gender, occupation, bmiCategory, sleepDuration, 
     return(
         <div className='flex flex-col mx-auto'>
             <h1 className='text-4xl text-[#0f1b25] mt-10 text-center font-extrabold'>Start Predicting!</h1>
-            <div className='flex flex-wrap mx-auto'>
+            <div className='flex flex-wrap mx-auto justify-center'>
                 <div className='max-w-72 m-12 p-10 rounded-xl bg-[#0f1b25] text-white flex flex-col gap-4'>
                     <h3 className='font-bold text-center text-2xl'>INPUT</h3>
                     <hr />
