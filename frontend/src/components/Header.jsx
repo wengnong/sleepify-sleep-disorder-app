@@ -32,8 +32,8 @@ export function Header() {
     };
 
     return (
-        <header className={`sticky z-30 top-0 mx-auto w-full p-2 sm:p-4 flex items-center justify-between gap-2 sm:gap-4 transition-all duration-700 ${isScrolled ? 'bg-white' : 'bg-transparent'} ${isLink ? 'text-white' : ''}`}>
-            <span onClick={scrollToTop} className='text-2xl sm:text-3xl md:text-3xl lg:text-3xl text-[#1b3e72] font-extrabold cursor-pointer'>Sleepify</span>
+        <header className={`sticky z-30 top-0 mx-auto w-full p-2 sm:p-4 flex items-center justify-between gap-2 sm:gap-4 transition-all duration-700 ${isScrolled ? 'bg-slate-200' : 'bg-[#0f1b25] text-white'} ${isLink ? 'text-white' : ''}`}>
+            <span onClick={scrollToTop} className='text-2xl sm:text-3xl md:text-3xl lg:text-3xl text-[#4b76b8] font-extrabold cursor-pointer'>Sleepify</span>
             <div className='flex items-center justify-between gap-2 sm:gap-4'>
                 <span onClick={() =>
                     window.open('https://www.cdc.gov/sleep/about/index.html', '_blank')
