@@ -84,7 +84,7 @@ function App() {
           />
         </div>
         <Predictor prediction={prediction} handlePredict={handlePredict}/>
-        <div className='text-center text-xs m-10'>
+        <div className='text-center text-xs m-10 pointer-events-none'>
           <p>©Copyright 2024 of Sleepify. All rights are protected by law.</p>
         </div>
       </div>

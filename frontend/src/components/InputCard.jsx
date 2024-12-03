@@ -2,10 +2,10 @@ export function InputCard({age, gender, occupation, bmiCategory, sleepDuration, 
 
     return(
         <div className='flex flex-col mx-auto'>
-            <h1 className='text-4xl text-[#0f1b25] mt-10 text-center font-extrabold'>Start Predicting!</h1>
+            <h1 className='text-4xl text-[#0f1b25] mt-10 text-center font-extrabold pointer-events-none'>Start Predicting!</h1>
             <div className='flex flex-wrap mx-auto justify-center'>
                 <div className='max-w-72 m-12 p-10 rounded-xl bg-[#0f1b25] text-white flex flex-col gap-4'>
-                    <h3 className='font-bold text-center text-2xl'>INPUT</h3>
+                    <h3 className='font-bold text-center text-2xl pointer-events-none'>INPUT</h3>
                     <hr />
                     <div>
                         <div className='flex flex-col mx-auto'>
@@ -57,7 +57,7 @@ export function InputCard({age, gender, occupation, bmiCategory, sleepDuration, 
                 </div>
 
                 <div className='max-w-72 m-12 p-10 rounded-xl bg-[#0f1b25] text-white flex flex-col gap-4'>
-                    <h3 className='font-bold text-center text-2xl'>SLEEP</h3>
+                    <h3 className='font-bold text-center text-2xl pointer-events-none'>SLEEP</h3>
                     <hr />
                     <div className='flex flex-col mx-auto'>
                         <label className='font-medium'>Sleep Duration</label>
@@ -88,7 +88,7 @@ export function InputCard({age, gender, occupation, bmiCategory, sleepDuration, 
                 </div>
 
                 <div className='max-w-72 m-12 p-10 rounded-xl bg-[#0f1b25] text-white flex flex-col gap-4'>
-                    <h3 className='font-bold text-center text-2xl'>HEALTH</h3>
+                    <h3 className='font-bold text-center text-2xl pointer-events-none'>HEALTH</h3>
                     <hr />
                     <div>
                         <label className='font-medium'>Stress Level</label>
