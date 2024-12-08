@@ -1,11 +1,13 @@
 import './App.css'
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import axios from 'axios'
 import { Header } from './components/Header'
 import { Jumbotron } from './components/Jumbotron'
 import { Details } from './components/Details'
 import { InputCard } from './components/InputCard'
 import { Predictor } from './components/Predictor'
+import { SignIn } from './components/SignIn'
 
 
 function App() {
@@ -50,45 +52,55 @@ function App() {
   };
 
   return (
-    <>
-      <div className='relative text-sm sm:text-base min-h-screen flex flex-col'>
-        <Header />
-        <Jumbotron />
-        <Details />
-        <div id='input-card'>
-          <InputCard
-            age={age}
-            gender={gender}
-            occupation={occupation}
-            bmiCategory={bmiCategory}
-            sleepDuration={sleepDuration}
-            qualityOfSleep={qualityOfSleep}
-            physicalActivityLevel={physicalActivityLevel}
-            stressLevel={stressLevel}
-            heartRate={heartRate}
-            dailySteps={dailySteps}
-            systolic={systolic}
-            diastolic={diastolic}
-            setAge={setAge}
-            setGender={setGender}
-            setOccupation={setOccupation}
-            setBmiCategory={setBmiCategory}
-            setSleepDuration={setSleepDuration}
-            setQualityOfSleep={setQualityOfSleep}
-            setPhysicalActivityLevel={setPhysicalActivityLevel}
-            setStressLevel={setStressLevel}
-            setHeartRate={setHeartRate}
-            setDailySteps={setDailySteps}
-            setSystolic={setSystolic}
-            setDiastolic={setDiastolic}
-          />
-        </div>
-        <Predictor prediction={prediction} handlePredict={handlePredict}/>
-        <div className='text-center text-xs m-10 pointer-events-none'>
-          <p>©Copyright 2024 of Sleepify. All rights are protected by law.</p>
-        </div>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        {/* Main page */}
+        <Route
+          path="/"
+          element={
+            <div className='relative text-sm sm:text-base min-h-screen flex flex-col'>
+              <Header />
+              <Jumbotron />
+              <Details />
+              <div id='input-card'>
+                <InputCard
+                  age={age}
+                  gender={gender}
+                  occupation={occupation}
+                  bmiCategory={bmiCategory}
+                  sleepDuration={sleepDuration}
+                  qualityOfSleep={qualityOfSleep}
+                  physicalActivityLevel={physicalActivityLevel}
+                  stressLevel={stressLevel}
+                  heartRate={heartRate}
+                  dailySteps={dailySteps}
+                  systolic={systolic}
+                  diastolic={diastolic}
+                  setAge={setAge}
+                  setGender={setGender}
+                  setOccupation={setOccupation}
+                  setBmiCategory={setBmiCategory}
+                  setSleepDuration={setSleepDuration}
+                  setQualityOfSleep={setQualityOfSleep}
+                  setPhysicalActivityLevel={setPhysicalActivityLevel}
+                  setStressLevel={setStressLevel}
+                  setHeartRate={setHeartRate}
+                  setDailySteps={setDailySteps}
+                  setSystolic={setSystolic}
+                  setDiastolic={setDiastolic}
+                />
+              </div>
+              <Predictor prediction={prediction} handlePredict={handlePredict} />
+              <div className='text-center text-xs m-10 pointer-events-none'>
+                <p>©Copyright 2024 of Sleepify. All rights are protected by law.</p>
+              </div>
+            </div>
+          }
+        />
+        {/* Sign In page */}
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+    </Router>
   );
 }
 
