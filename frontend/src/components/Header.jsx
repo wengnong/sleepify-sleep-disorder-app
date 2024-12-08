@@ -44,7 +44,7 @@ export function Header() {
                 <span onClick={() =>
                     window.open('https://www.siloamhospitals.com/call-center')
                 } className='text-xs sm:text-sm md:text-sm lg:text-sm font-medium cursor-pointer hover:underline'>Contact</span>
-                <button onClick={() => navigate('/SignIn')}
+                <button onClick={() => navigate('/signin')}
                     className='text-xs sm:text-sm md:text-sm lg:text-sm font-medium bg-[#1b3e72] text-white px-4 py-2 rounded-full hover:bg-slate-800 ease-in-out duration-300'>
                     Sign In</button>
             </div>
