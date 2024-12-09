@@ -28,6 +28,13 @@ body {
   background-size: contain;
 }
 
+.signin-bg {
+  background-image: url('assets/seamless-glittery-gold-stars-design-resource.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* 
 #title {
   font-size: 10em;

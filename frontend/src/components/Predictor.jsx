@@ -14,7 +14,7 @@ export function Predictor({prediction, handlePredict}) {
     return (
         <div className='flex flex-col justify-center mx-auto'>
             <div className='text-center'>
-                <button class="mb-12 bg-[#152947] px-12 py-4 text-white font-bold rounded-full text-xl hover:bg-slate-800 ease-in-out duration-300" id="buttonid" onClick={handleScrollToRes}>Predict</button>
+                <button class="mb-12 bg-[#152947] px-12 py-4 text-white font-bold rounded-full text-xl hover:bg-black ease-in-out duration-300" id="buttonid" onClick={handleScrollToRes}>Predict</button>
             </div>
 
             {prediction === 0 && (
